@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="us-en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    
+    <title>Bootstrap Visualization Dashboard</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <!-- Designs the navbar that will be present on all tables-->
+    <nav class="navbar navbar-default">
+        <div class="navbar-container container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="../index.html" style="color: white;">Latitude</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarDropdown">
+                <ul class="nav navbar-nav navbar-right">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"  id="large-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby = "large-dropdown">
+                            <li><a class="dropdown-item" href="./temperature.html">Max Temperature</a></li>
+                            <li><a class="dropdown-item" href="./humidity.html">Humidity</a></li>
+                            <li><a class="dropdown-item" href="./clouds.html">Cloudiness</a></li>
+                            <li><a class="dropdown-item" href="./windspeed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+
+
+                    <a href="#" class="mobile-button" id="small-dropdown" role="button">Plots<span
+                            class="caret"></span></a>
+                    <ul class="nav navbar-nav mobile-menu" id="small-dropdown-list">
+                        <li><a class="dropdown-item" href="./temperature.html">Max Temperature</a></li>
+                        <li><a class="dropdown-item" href="./humidity.html">Humidity</a></li>
+                        <li><a class="dropdown-item" href="./clouds.html">Cloudiness</a></li>
+                        <li><a class="dropdown-item" href="./windspeed.html">Wind Speed</a></li>
+                    </ul>
+
+                    <li><a href="../comparison.html">Comparison</a></li>
+                    <li><a href="../data.html">Data</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="content-container container-fluid">
+
+        <div class="row">
+            <main class="col-md-7 col-xs-12">
+                <div class="main-padding">
+                    <h1 class="header">Cloudiness</h1>
+                    <hr>
+                    <section class="main">
+                        <img class="main-image-nonfloat" src = "../Resources/assets/images/Fig3.png" alt = "City Latitude vs. Cloudiness">
+                        <p></p>
+                    </section>
+                </div>
+
+            </main>
+            <side class="col-md-5 col-12">
+                <div class="side-padding">
+                    <h2 class="header">Visualizations</h2>
+                    <section class="container-fluid">
+                        <div class="row side-row">
+                            <div class="col-md-6 col-3">
+                                <a href="./temperature.html">
+                                    <img class="side-image" src = "../Resources/assets/images/Fig1.png" alt = "City Latitude vs. Max Temperature">
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-3">
+                                <a href="./humidity.html">
+                                    <img class="side-image" src = "../Resources/assets/images/Fig2.png" alt = "City Latitude vs. Humidity">
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-3">
+                                <a href="./clouds.html">
+                                    <img class="side-image" src = "../Resources/assets/images/Fig3.png" alt = "City Latitude vs. Cloudiness">
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-3">
+                                <a href="./windspeed.html">
+                                    <img class="side-image" src = "../Resources/assets/images/Fig4.png" alt = "City Latitude vs. Wind Speed">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </side>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+
+</body>
+</html>
